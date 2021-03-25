@@ -1,3 +1,4 @@
+
 function increase(clicked_id){
   console.log(clicked_id);
   var time  = document.getElementById("Time").innerHTML
