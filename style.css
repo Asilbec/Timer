@@ -9,7 +9,6 @@ body {
 }
 
 #TimerContainer {
-<<<<<<< HEAD
   width: fit-content;
   height: 40%;
   margin: auto;
@@ -28,16 +27,6 @@ body {
   justify-content: center;
   grid-gap: 15px 15px;
 }
-=======
-    width: fit-content;
-    height: 40%;
-    margin: auto;
-    background-color: rgba(48, 48, 48, 0.089);
-    min-width: 200px;
-    min-height: 200px;
-    margin-top: 14vh;
-    min-height: 300px;
->>>>>>> 55749fd799b6e10a0de7919de16b865915020f0f
 
 #Numbers button {
   border-radius: 5%;
@@ -96,7 +85,6 @@ body {
     
 }
 
-<<<<<<< HEAD
 #CloseButton button{
     width: 80%;
     height: 50px;
@@ -110,8 +98,3 @@ body {
 }
 
 
-=======
-#start{
-    text-decoration: underline;
-}
->>>>>>> 55749fd799b6e10a0de7919de16b865915020f0f
