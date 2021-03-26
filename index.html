@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='viewport' 
-     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
-     user-scalable=0' >
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0'>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
 
     <title>Timer</title>
 </head>
+
 <body>
     
+    <div id="openButton">
+        <button onclick="openNav()">Open Settings</button>
+    </div>
+    <div id ="ThePage">
+        <div id="CloseButton">
+            <button onclick="closeNav()">Close Settings</button>
+        </div>
+        <div id="backgroundColor">
+            <h1>background</h1>
+            <input type="color" id="bgcolor" value="#ffffff" onchange="test(this)"/>
+        </div>
+        <div id="TextColor">
+            <h1>Timer Color</h1>
+            <input type="color" id="bgcolor" value="#ffffff" onchange="change(this)"/>
+        </div>
+        <div id="TextColor">
+            <h1>Timer Shadow</h1>
+            <input type="color" id="bgcolor" value="#ffffff" onchange="changeShadow(this)"/>
+        </div>
+    </div>
 
-    <h1 id="Time">00:00</h1> 
+    <h1 id="Time">00:00</h1>
+
     <div id="TimerContainer">
-            <div id="Numbers">
-                <button id="1" onclick="increase(this.id)">1</button>
-                <button id="2" onclick="increase(this.id)">2</button>
-                <button id="3" onclick="increase(this.id)">3</button>
-                <button id="4" onclick="increase(this.id)">4</button>
-                <button id="5" onclick="increase(this.id)">5</button>
-                <button id="6" onclick="increase(this.id)">6</button>
-                <button id="7" onclick="increase(this.id)">7</button>
-                <button id="8" onclick="increase(this.id)">8</button>
-                <button id="9" onclick="increase(this.id)">9</button>
-                <button id="clear" onclick="clearScreen()">CLEAR</button>
-                <button id="0" onclick="increase(this.id)">0</button>
-                <button id="start" onclick="start()">START</button>
-
-            </div>
+        <div id="Numbers">
+            <button type="button" id="1" onclick="increase(this.id)">1</button>
+            <button type="button"id="2" onclick="increase(this.id)">2</button>
+            <button type="button"id="3" onclick="increase(this.id)">3</button>
+            <button type="button"id="4" onclick="increase(this.id)">4</button>
+            <button type="button"id="5" onclick="increase(this.id)">5</button>
+            <button type="button"id="6" onclick="increase(this.id)">6</button>
+            <button type="button"id="7" onclick="increase(this.id)">7</button>
+            <button type="button"id="8" onclick="increase(this.id)">8</button>
+            <button type="button"id="9" onclick="increase(this.id)">9</button>
+            <button type="button"id="clear" onclick="clearScreen()">CLEAR</button>
+            <button type="button"id="0" onclick="increase(this.id)">0</button>
+            <button type="button"id="start" onclick="start()">START</button>
+        </div>
     </div>
     
+
     <script src="app.js"></script>
+
 </body>
 
 </html>

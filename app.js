@@ -1,4 +1,3 @@
-
 function increase(clicked_id){
   console.log(clicked_id);
   var time  = document.getElementById("Time").innerHTML
@@ -40,9 +39,11 @@ function start(){
     var counter = setInterval(function(){ totalTime = totalTime-1;
       var minutes = Math.floor(totalTime / 60 );
       var seconds = totalTime % 60;
+      if (seconds<10){
+        seconds = "0"+seconds;
+        console.log("node")
+      }
       document.getElementById("Time").innerHTML = minutes +":"+ seconds
-      console.log(minutes)
-      console.log(minutes)
       if (totalTime<=0){
         clearInterval(counter);
         document.getElementById("Time").innerHTML = "Finished"
@@ -53,14 +54,36 @@ function start(){
   
 }
 
-if (permisionThings == true){
-  function animateBg(i) {
-    document.body.style.backgroundColor = 'hsl(' + i + ', 100%, 25%)';
 
-    
-    setTimeout(function() {
-        animateBg(++i)
-    }, i);
-  }
-  animateBg(0);
+
+function test(t) {
+  console.log(t.value);
+  document.body.style.backgroundColor = t.value;
 }
+
+
+function openNav() {
+  document.getElementById("ThePage").style.width = "250px";
+  document.getElementById("ThePage").style.borderRight = "5px solid white";
+
+}
+
+function closeNav() {
+  document.getElementById("ThePage").style.width = "0";
+  document.getElementById("ThePage").style.borderRight = "0px solid white";
+}
+
+
+function change(t) {
+  document.getElementById("Time").style.color = t.value;
+}
+
+function changeShadow(t) {
+  document.getElementById("Time").style.textShadow =  "5px 12px "+t.value;
+}
+
+function changeButton(t) {
+  document.getElementsByTagName("button").backgroundColor = t.value;
+}
+
+
