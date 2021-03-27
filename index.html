@@ -7,7 +7,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
      user-scalable=0'>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 
     <title>Timer</title>
 </head>
@@ -15,7 +16,8 @@
 <body>
     
     <div id="openButton">
-        <button onclick="openNav()">Open Settings</button>
+        <button onclick="openNav()"><ion-icon name="settings" size ="small"></ion-icon>
+        </button>
     </div>
     <div id ="ThePage">
         <div id="CloseButton">
@@ -33,9 +35,22 @@
             <h1>Timer Shadow</h1>
             <input type="color" id="bgcolor" value="#ffffff" onchange="changeShadow(this)"/>
         </div>
+        <div id="CloseButton">
+            <button onclick="setBackToNormal()">Reset</button>
+        </div>
+        <div id="CloseButton">
+            <button onclick="startMusic()">PLAY MUSIC</button>
+        </div>
+        <div id="CloseButton">
+            <button onclick="puaseMusic()">PAUSE MUSIC</button>
+        </div>
     </div>
 
     <h1 id="Time">00:00</h1>
+    <div id="Reset">
+        <button onclick="starOver()">RESET</button>
+    </div>
+    </div>
 
     <div id="TimerContainer">
         <div id="Numbers">
@@ -54,6 +69,16 @@
         </div>
     </div>
     
+    <audio id="myAudio">
+        <source src="/music/oldies playing in another room and it's raining v.1.mp3" type="audio/ogg">
+        <source src="/music/oldies playing in another room and it's raining v.1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="myAudioFinished">
+        <source src="/music/Uh, I'm not finished Sound Effect.mp3" type="audio/ogg">
+        <source src="/music/Uh, I'm not finished Sound Effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
 
     <script src="app.js"></script>
 
