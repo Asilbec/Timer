@@ -123,9 +123,10 @@ function starOver(){
   seconds = 0;
 }
 function setBackToNormal(){
-  document.getElementById("Time").style.textShadow = resetBackground;
-  document.getElementById("Time").style.color = resetText;
+  document.getElementById("Time").style.textShadow = "black";
+  document.getElementById("Time").style.color = "white";
   document.getElementById("Time").style.textShadow = resetShadow;
+  document.body.style.backgroundColor = "grey"
 
 }
 
